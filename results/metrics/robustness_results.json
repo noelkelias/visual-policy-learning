@@ -1,0 +1,102 @@
+{
+    "normal": {
+        "resnet": {
+            "success_rate": 1.0,
+            "avg_reward": -16.446945822604025,
+            "avg_steps": 71.0,
+            "reward_std": 0.0
+        },
+        "dino": {
+            "success_rate": 1.0,
+            "avg_reward": -9.244059660944309,
+            "avg_steps": 37.0,
+            "reward_std": 0.0
+        },
+        "clip": {
+            "success_rate": 0.0,
+            "avg_reward": -31.739234963457715,
+            "avg_steps": 100.0,
+            "reward_std": 0.0
+        }
+    },
+    "dark": {
+        "resnet": {
+            "success_rate": 0.0,
+            "avg_reward": -32.93245842199007,
+            "avg_steps": 100.0,
+            "reward_std": 0.0
+        },
+        "dino": {
+            "success_rate": 0.0,
+            "avg_reward": -30.884450825773964,
+            "avg_steps": 100.0,
+            "reward_std": 0.0
+        },
+        "clip": {
+            "success_rate": 0.0,
+            "avg_reward": -29.215829045838,
+            "avg_steps": 100.0,
+            "reward_std": 0.0
+        }
+    },
+    "bright": {
+        "resnet": {
+            "success_rate": 1.0,
+            "avg_reward": -5.5899425769082836,
+            "avg_steps": 34.0,
+            "reward_std": 0.0
+        },
+        "dino": {
+            "success_rate": 0.0,
+            "avg_reward": -38.26892219219282,
+            "avg_steps": 100.0,
+            "reward_std": 0.0
+        },
+        "clip": {
+            "success_rate": 0.0,
+            "avg_reward": -32.27608049720647,
+            "avg_steps": 100.0,
+            "reward_std": 0.0
+        }
+    },
+    "occlusion": {
+        "resnet": {
+            "success_rate": 0.0,
+            "avg_reward": -33.06512621537498,
+            "avg_steps": 100.0,
+            "reward_std": 0.0
+        },
+        "dino": {
+            "success_rate": 1.0,
+            "avg_reward": -6.065490080814067,
+            "avg_steps": 33.0,
+            "reward_std": 0.0
+        },
+        "clip": {
+            "success_rate": 1.0,
+            "avg_reward": -8.766031171797092,
+            "avg_steps": 39.0,
+            "reward_std": 0.0
+        }
+    },
+    "noise": {
+        "resnet": {
+            "success_rate": 0.0,
+            "avg_reward": -34.28973986954226,
+            "avg_steps": 100.0,
+            "reward_std": 0.0
+        },
+        "dino": {
+            "success_rate": 0.0,
+            "avg_reward": -42.73043158523317,
+            "avg_steps": 100.0,
+            "reward_std": 0.0
+        },
+        "clip": {
+            "success_rate": 0.0,
+            "avg_reward": -33.480560908285064,
+            "avg_steps": 100.0,
+            "reward_std": 0.0
+        }
+    }
+}
