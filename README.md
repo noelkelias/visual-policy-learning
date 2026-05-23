@@ -113,10 +113,17 @@ The repo is set up for **reproducibility**: scripts and notebooks for the full p
 
 `PandaReachEnv` wraps a MuJoCo Panda scene with a mocap goal marker. Each episode:
 
-- Samples a target in workspace bounds: \(x \in [0.45, 0.60]\), \(y \in [-0.15, 0.15]\), \(z \in [0.30, 0.50]\)
+- Samples a target in workspace bounds:
+  x in [0.45, 0.60],
+  y in [-0.15, 0.15],
+  z in [0.30, 0.50]
 - Uses **image-only** observations (`obs["image"]`, uint8 HWC)
-- Defines success when \(\|p_{\mathrm{ee}} - p_{\mathrm{target}}\|_2 < 0.05\) m
-- Reward: \(-\|p_{\mathrm{ee}} - p_{\mathrm{target}}\|_2 - 0.01\|q_{\mathrm{vel}}\|_2\), with **+10** bonus on success
+- Defines success when
+  ||p_ee - p_target||_2 < 0.05 m
+- Reward:
+  - ||p_ee - p_target||_2
+  - 0.01 ||q_vel||_2,
+  with **+10** bonus on success
 
 ```python
 # envs/panda_reach_env.py — core success criterion
@@ -130,9 +137,9 @@ if info["success"]:
 
 The expert (`policies/scripted_policy.py`) uses **damped least-squares IK**:
 
-\[
-\Delta q = J^\top (J J^\top + \lambda^2 I)^{-1} (k_p \cdot e), \quad e = \mathrm{clip}(p_{\mathrm{target}} - p_{\mathrm{ee}})
-\]
+Δq = Jᵀ (J Jᵀ + λ² I)⁻¹ (k_p · e)
+where
+e = clip(p_target - p_ee)
 
 On a 20-episode sanity check (`notebooks/expert.ipynb`), the scripted policy achieves **100% success** (mean success step ≈ 45).
 
