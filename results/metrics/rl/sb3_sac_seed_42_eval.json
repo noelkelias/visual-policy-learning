@@ -1,0 +1,12 @@
+{
+    "algo": "sac",
+    "backend": "sb3",
+    "run_name": "sb3_sac",
+    "seed": "seed_42",
+    "success_rate": 0.96,
+    "avg_reward": -11.582228107105731,
+    "avg_steps": 42.68,
+    "reward_std": 15.383490959790118,
+    "num_episodes": 25,
+    "checkpoint": "models/rl/checkpoints/sb3_sac/seed_42/model"
+}

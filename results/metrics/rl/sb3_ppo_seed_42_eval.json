@@ -1,0 +1,12 @@
+{
+    "algo": "ppo",
+    "backend": "sb3",
+    "run_name": "sb3_ppo",
+    "seed": "seed_42",
+    "success_rate": 1.0,
+    "avg_reward": -8.566869582693633,
+    "avg_steps": 35.92,
+    "reward_std": 1.9268135255834677,
+    "num_episodes": 25,
+    "checkpoint": "models/rl/checkpoints/sb3_ppo/seed_42/model"
+}

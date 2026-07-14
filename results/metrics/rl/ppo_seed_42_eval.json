@@ -1,0 +1,12 @@
+{
+    "algo": "ppo",
+    "backend": "scratch",
+    "run_name": "ppo",
+    "seed": "seed_42",
+    "success_rate": 0.96,
+    "avg_reward": -13.066318851267907,
+    "avg_steps": 50.0,
+    "reward_std": 9.984205668334985,
+    "num_episodes": 25,
+    "checkpoint": "models/rl/checkpoints/ppo/seed_42/model"
+}

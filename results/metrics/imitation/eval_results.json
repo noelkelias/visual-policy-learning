@@ -1,0 +1,20 @@
+{
+    "resnet": {
+        "success_rate": 0.8,
+        "avg_reward": -14.722587195362559,
+        "avg_steps": 56.2,
+        "reward_std": 9.523183158443718
+    },
+    "dino": {
+        "success_rate": 0.6,
+        "avg_reward": -20.119211755276933,
+        "avg_steps": 69.8,
+        "reward_std": 11.026841027122975
+    },
+    "clip": {
+        "success_rate": 1.0,
+        "avg_reward": -10.590704487208846,
+        "avg_steps": 43.0,
+        "reward_std": 2.8699775922077593
+    }
+}

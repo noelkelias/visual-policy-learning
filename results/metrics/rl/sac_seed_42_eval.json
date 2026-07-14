@@ -1,0 +1,12 @@
+{
+    "algo": "sac",
+    "backend": "scratch",
+    "run_name": "sac",
+    "seed": "seed_42",
+    "success_rate": 1.0,
+    "avg_reward": -9.22702040385014,
+    "avg_steps": 42.6,
+    "reward_std": 2.03093521419524,
+    "num_episodes": 25,
+    "checkpoint": "models/rl/checkpoints/sac/seed_42/model"
+}

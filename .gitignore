@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+
+# Secrets / experiment tooling
+.env
+.env.*
+wandb/
+runs/
+lightning_logs/
+.ipynb_checkpoints/
+
+# Demo datasets (regenerate via notebooks)
+data/*.h5
+
+# Bulky intermediate training dumps — keep finals + logs
+models/imitation/checkpoints/**/epoch_*.pt
+models/rl/**/*_steps.zip
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
